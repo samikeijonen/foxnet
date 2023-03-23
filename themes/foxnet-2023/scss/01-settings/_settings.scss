@@ -53,6 +53,8 @@
     --space-m-xl: clamp(1.5rem, calc(0.91rem + 2.37vw), 3.75rem);
     --space-l-5xl: clamp(2rem, calc(-1.42rem + 13.68vw), 15rem);
 
+    --x-padding: var(--space-s-4xl);
+
     /* Font family. */
     --font-sans-serif: Poppins, sans-serif;
 
@@ -71,6 +73,11 @@
 
     --color-black: #111;
     --color-white: #fff;
+
+    --color-success-700: #2f8132;
+    --color-success-500: #57ae5b;
+    --color-success-200: #c1eac5;
+    --color-success-100: #e3f9e5;
 
     /* Widths. */
     --max-width-160: 160rem;

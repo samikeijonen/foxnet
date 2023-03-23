@@ -1,3 +1,9 @@
+.group > * {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--width-regular));
+}
+
 // Widths.
 .width-regular {
     width: var(--width-regular);
@@ -21,16 +27,10 @@
 }
 
 .width-full {
-    margin-left: calc(var(--space-l-5xl) * -1);
-    margin-right: calc(var(--space-l-5xl) * -1);
+    margin-left: calc(var(--x-padding) * -1);
+    margin-right: calc(var(--x-padding) * -1);
     max-width: none;
     width: auto;
-}
-
-.group > * {
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(var(--width-regular));
 }
 
 // Max. widths.
