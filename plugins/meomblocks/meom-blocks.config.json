@@ -1,0 +1,30 @@
+{
+    "category": {
+        "name": "MEOM-lohkot",
+        "slug": "meomblocks"
+    },
+    "blocks": [
+        {
+            "slug": "hero"
+        },
+        {
+            "slug": "image-and-text"
+        },
+        {
+            "slug": "grid"
+        },
+        {
+            "slug": "grid-column"
+        },
+        {
+            "slug": "article-lifts"
+        },
+        {
+            "slug": "group"
+        },
+        {
+            "slug": "social-links"
+        }
+    ],
+    "acf_blocks" : {}
+}

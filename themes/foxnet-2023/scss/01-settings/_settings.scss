@@ -1,0 +1,101 @@
+// Add styles.
+:root {
+    /* Font sizes.
+     *
+     * Generate new values using the following link.
+     *
+     * @link https://utopia.fyi/type/calculator/?c=400,16,1.125,1920,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+     * */
+    --step--2: clamp(0.79rem, calc(0.79rem + 0.01vw), 0.8rem);
+    --step--1: clamp(0.89rem, calc(0.86rem + 0.12vw), 1rem);
+    --step-0: clamp(1rem, calc(0.93rem + 0.26vw), 1.25rem);
+    --step-1: clamp(1.13rem, calc(1.01rem + 0.46vw), 1.56rem);
+    --step-2: clamp(1.27rem, calc(1.08rem + 0.72vw), 1.95rem);
+    --step-3: clamp(1.42rem, calc(1.16rem + 1.07vw), 2.44rem);
+    --step-4: clamp(1.6rem, calc(1.22rem + 1.53vw), 3.05rem);
+    --step-5: clamp(1.8rem, calc(1.27rem + 2.12vw), 3.82rem);
+
+    --line-height-heading: 1.25;
+    --line-height-body: 1.5;
+
+    --letter-spacing: 0.08em;
+
+    /* Spacing.
+     *
+     * Generate new values using the following link.
+     *
+     * @link https://utopia.fyi/space/calculator/?c=400,16,1.2,1920,24,1.25,5,2,&s=0.75|0.25,1.5|2|2.5|3|4|7|10,s-4xl|m-xl|l-5xl&g=s,l,xl,12
+     * */
+    --space-2xs: clamp(0.25rem, calc(0.22rem + 0.13vw), 0.38rem);
+    --space-xs: clamp(0.75rem, calc(0.65rem + 0.39vw), 1.13rem);
+    --space-s: clamp(1rem, calc(0.87rem + 0.53vw), 1.5rem);
+    --space-m: clamp(1.5rem, calc(1.3rem + 0.79vw), 2.25rem);
+    --space-l: clamp(2rem, calc(1.74rem + 1.05vw), 3rem);
+    --space-xl: clamp(2.5rem, calc(2.17rem + 1.32vw), 3.75rem);
+    --space-2xl: clamp(3rem, calc(2.61rem + 1.58vw), 4.5rem);
+    --space-3xl: clamp(4rem, calc(3.47rem + 2.11vw), 6rem);
+    --space-4xl: clamp(7rem, calc(6.08rem + 3.68vw), 10.5rem);
+    --space-5xl: clamp(10rem, calc(8.68rem + 5.26vw), 15rem);
+
+    /* One-up pairs */
+    --space-2xs-xs: clamp(0.25rem, calc(0.02rem + 0.92vw), 1.13rem);
+    --space-xs-s: clamp(0.75rem, calc(0.55rem + 0.79vw), 1.5rem);
+    --space-s-m: clamp(1rem, calc(0.67rem + 1.32vw), 2.25rem);
+    --space-m-l: clamp(1.5rem, calc(1.11rem + 1.58vw), 3rem);
+    --space-l-xl: clamp(2rem, calc(1.54rem + 1.84vw), 3.75rem);
+    --space-xl-2xl: clamp(2.5rem, calc(1.97rem + 2.11vw), 4.5rem);
+    --space-2xl-3xl: clamp(3rem, calc(2.21rem + 3.16vw), 6rem);
+    --space-3xl-4xl: clamp(4rem, calc(2.29rem + 6.84vw), 10.5rem);
+    --space-4xl-5xl: clamp(7rem, calc(4.89rem + 8.42vw), 15rem);
+
+    /* Custom pairs */
+    --space-s-4xl: clamp(1rem, calc(-1.5rem + 10vw), 10.5rem);
+    --space-m-xl: clamp(1.5rem, calc(0.91rem + 2.37vw), 3.75rem);
+    --space-l-5xl: clamp(2rem, calc(-1.42rem + 13.68vw), 15rem);
+
+    /* Font family. */
+    --font-sans-serif: Poppins, sans-serif;
+
+    /* Colors.
+     *
+     * @link: https://nordhealth.design/color-generator/?theme=nord&gray=true&hues=12&shades=5&lightness=0.6
+     */
+    --color-primary-400: #b12f4f;
+    --color-primary-300: #de899e;
+    --color-primary-200: #edc0cb;
+    --color-primary-100: #f9e8ec;
+
+    --color-primary: var(--color-primary-400);
+
+    --color-grey-500: #ebecef;
+
+    --color-black: #111;
+    --color-white: #fff;
+
+    /* Widths. */
+    --max-width-160: 160rem;
+
+    // Container max width (1680px).
+    --max-width-wide: 105rem;
+
+    // 66% of the container.
+    --max-width-medium: calc(var(--max-width-wide) * 0.666666666);
+
+    // 50% of the container.
+    --max-width-regular: calc(var(--max-width-wide) * 0.5);
+
+    --width-wide: clamp(min(50rem, 100%), 100%, var(--max-width-wide));
+    --width-wide-plus: clamp(min(50rem, 100%), 100%, var(--max-width-wide-plus));
+    --width-medium: clamp(min(40rem, 100%), 66.66%, var(--max-width-medium));
+    --width-regular: clamp(min(40rem, 100%), 50%, var(--max-width-regular));
+
+    /* Grid global rules also for editor. */
+    --auto-fit-or-fill: auto-fit;
+
+    /* Transitions. */
+    --transition-2: 0.2s;
+}
+
+.posts-list {
+    --auto-fit-or-fill: auto-fill;
+}
