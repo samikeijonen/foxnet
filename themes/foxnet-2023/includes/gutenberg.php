@@ -139,5 +139,24 @@ function gutenberg_allowed_embeds( $allowed_embeds ) {
 }
 add_filter( 'meom_dodo_allowed_embed_variants', 'Kala\gutenberg_allowed_embeds' );
 
+/**
+ * Add email and phone block.
+ *
+ * @param string $block_content  The block content about to be appended.
+ * @param array  $block          The full block, including name and attributes.
+ *
+ * @return string The block contents, rendered (or altered).
+ */
+function render_icons( $block_content, $block ) {
+    if ( 'core/list' === $block['blockName'] && 'is-style-list-check' === $block['attrs']['className'] ) {
+            $check = get_svg( 'check' );
+
+            $block_content = str_replace( '<li>', '<li><span class="icon-wrapper">' . $check . '</span>', $block_content );
+    }
+
+    return $block_content;
+}
+add_filter( 'render_block', 'Kala\render_icons', 10, 2 );
+
 // Remove SVG filters from body.
 remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );

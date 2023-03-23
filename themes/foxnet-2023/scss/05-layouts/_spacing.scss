@@ -92,7 +92,7 @@
 }
 
 .has-background {
-    padding: var(--space-5xl) var(--space-l-5xl);
+    padding: var(--space-5xl) var(--x-padding);
 
     + .has-background {
         margin-bottom: 0;
@@ -110,6 +110,6 @@
 
 /* Paddings. */
 .x-padding {
-    padding-left: var(--space-l-5xl);
-    padding-right: var(--space-l-5xl);
+    padding-left: var(--x-padding);
+    padding-right: var(--x-padding);
 }

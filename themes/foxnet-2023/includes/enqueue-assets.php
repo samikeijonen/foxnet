@@ -23,7 +23,7 @@ function enqueue_scripts() {
     wp_enqueue_script(
         'theme-scripts',
         get_theme_file_uri( 'build/main.js' ),
-        [ 'jquery' ],
+        [ ],
         filemtime( get_theme_file_path( 'build/main.js' ) ),
         true
     );

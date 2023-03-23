@@ -14,6 +14,12 @@ wp.domReady(() => {
         label: __('Ingress', 'kala'),
     });
 
+    // Register list styles.
+    wp.blocks.registerBlockStyle('core/list', {
+        name: 'list-check',
+        label: __('Check', 'kala'),
+    });
+
     // Unregister quote styles.
     wp.blocks.unregisterBlockStyle('core/quote', 'large');
     wp.blocks.unregisterBlockStyle('core/quote', 'plain');

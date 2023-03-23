@@ -17,7 +17,8 @@
     "allow-plugins": {
       "johnpbloch/wordpress-core-installer": true,
       "koodimonni/composer-dropin-installer": true,
-      "composer/installers": true
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "autoload": {
@@ -39,14 +40,10 @@
   ],
   "require": {
     "php": ">=7.4",
-    "johnpbloch/wordpress-core-installer": "^2.0",
-    "johnpbloch/wordpress-core": "^6.0",
-    "composer/installers": "^1.0",
-    "koodimonni/composer-dropin-installer": "^1.0",
-    "roots/bedrock-autoloader": "^1.0",
     "vlucas/phpdotenv": "^5.0"
   },
   "require-dev": {
-    "meom/phpcs-composer": "dev-main"
+    "meom/phpcs-composer": "dev-main",
+    "wp-coding-standards/wpcs": "@dev"
   }
 }

@@ -108,6 +108,16 @@ blockquote {
         letter-spacing: var(--letter-spacing);
         margin-top: var(--space-l);
         text-transform: uppercase;
+
+        a {
+            color: var(--color-black);
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-primary);
+            }
+        }
     }
 }
 
@@ -129,4 +139,36 @@ blockquote {
 .is-style-ingress {
     font-size: var(--step-1);
     font-weight: 600;
+}
+
+// List.
+.is-style-list-check {
+    list-style-type: none;
+    padding-left: 0;
+
+    > * + * {
+        margin-top: 1rem;
+    }
+
+    li {
+        align-items: center;
+        display: flex;
+    }
+
+    .icon-wrapper {
+        display: grid;
+        background-color: var(--color-success-100);
+        color: var(--color-success-700);
+        border-radius: 50%;
+        flex-shrink: 0;
+        height: 2em;
+        margin-right: 0.75em;
+        place-items: center;
+        width: 2em;
+
+        svg {
+            height: 1em;
+            width: 1em;
+        }
+    }
 }
