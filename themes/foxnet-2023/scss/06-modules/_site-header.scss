@@ -16,16 +16,9 @@
     top: var(--wp-admin--admin-bar--height);
 }
 
-.site-header__title::first-letter {
-    color: var(--color-primary-400);
-}
-
-.is-site-nav-opened .site-header__title::first-letter {
-    color: var(--color-white);
-}
-
 .site-header__title a {
     color: var(--color-white);
+    display: block;
     font-size: var(--step-1);
     font-weight: 700;
     letter-spacing: 0.175em;
@@ -34,9 +27,17 @@
     text-transform: uppercase;
     z-index: 110;
 
+    &::first-letter {
+        color: var(--color-primary-400);
+    }
+
     &:focus {
         outline-color: var(--color-white);
     }
+}
+
+.is-site-nav-opened .site-header__title a::first-letter {
+    color: var(--color-white);
 }
 
 .has-no-hero .site-header__title a {

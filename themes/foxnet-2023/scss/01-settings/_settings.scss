@@ -24,7 +24,7 @@
      *
      * Generate new values using the following link.
      *
-     * @link https://utopia.fyi/space/calculator/?c=400,16,1.2,1920,24,1.25,5,2,&s=0.75|0.25,1.5|2|2.5|3|4|7|10,s-4xl|m-xl|l-5xl&g=s,l,xl,12
+     * @link https://utopia.fyi/space/calculator/?c=400,16,1.2,1920,24,1.25,5,2,&s=0.75|0.25,1.5|2|2.5|3|4|7|10,s-4xl|m-xl|l-5xl|s-l&g=s,l,xl,12
      * */
     --space-2xs: clamp(0.25rem, calc(0.22rem + 0.13vw), 0.38rem);
     --space-xs: clamp(0.75rem, calc(0.65rem + 0.39vw), 1.13rem);
@@ -52,6 +52,7 @@
     --space-s-4xl: clamp(1rem, calc(-1.5rem + 10vw), 10.5rem);
     --space-m-xl: clamp(1.5rem, calc(0.91rem + 2.37vw), 3.75rem);
     --space-l-5xl: clamp(2rem, calc(-1.42rem + 13.68vw), 15rem);
+    --space-s-l: clamp(1rem, calc(0.47rem + 2.11vw), 3rem);
 
     --x-padding: var(--space-s-4xl);
 
