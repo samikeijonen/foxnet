@@ -40,7 +40,7 @@ export default registerBlockType(block.name, {
 
         const contentClasses = classNames({
             hero__content: true,
-            'top-margin': true,
+            'top-margin-children': true,
         });
 
         const innerBlocksProps = useInnerBlocksProps( // eslint-disable-line

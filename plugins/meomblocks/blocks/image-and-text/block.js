@@ -42,7 +42,7 @@ export default registerBlockType(block.name, {
 
         const innerBlocksProps = useInnerBlocksProps( // eslint-disable-line
             {
-                className: `image-and-text__content top-margin}`,
+                className: `image-and-text__content top-margin-children}`,
             },
             {
                 allowedBlocks: ALLOWED_BLOCKS,

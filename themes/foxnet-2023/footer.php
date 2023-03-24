@@ -5,11 +5,23 @@
             <?php
                 // Echo from global content CPT.
                 // Needs to have slug `footer`.
-                $footer_slug = function_exists( 'pll_current_language' ) && pll_current_language() === 'en' ? 'footer' : 'alapalkki';
-                $footer_post = get_page_by_path( $footer_slug, '', 'global-content' );
+                $footer_query = new WP_Query(
+                    [
+                        'post_type'              => 'global-content',
+                        'title'                  => 'Alapalkki',
+                        'post_status'            => 'all',
+                        'posts_per_page'         => 1,
+                        'no_found_rows'          => true,
+                        'ignore_sticky_posts'    => true,
+                        'update_post_term_cache' => false,
+                        'update_post_meta_cache' => false,
+                        'orderby'                => 'post_date ID',
+                        'order'                  => 'ASC',
+                    ]
+                );
 
-                if ( $footer_post ) :
-                    echo apply_filters( 'the_content', get_the_content( null, false, absint( $footer_post->ID )) ); // phpcs:ignore
+                if ( ! empty( $footer_query->post ) ) :
+                    echo apply_filters( 'the_content', get_the_content( null, false, $footer_query->post ) ); // phpcs:ignore
                 endif;
             ?>
         </div>

@@ -156,10 +156,10 @@ blockquote {
     }
 
     .icon-wrapper {
-        display: grid;
         background-color: var(--color-success-100);
-        color: var(--color-success-700);
         border-radius: 50%;
+        color: var(--color-success-700);
+        display: grid;
         flex-shrink: 0;
         height: 2em;
         margin-right: 0.75em;

@@ -1,5 +1,8 @@
 module.exports = {
     "extends": [ "@wordpress/stylelint-config/scss" ],
+    "plugins": [
+		"stylelint-order"
+	],
     "rules": {
         // Use spaces.
         "indentation": [4],
@@ -13,5 +16,6 @@ module.exports = {
         "selector-class-pattern": null,
         "no-invalid-position-at-import-rule": null,
         "value-keyword-case": null,
+        "order/properties-alphabetical-order": true,
     }
 };

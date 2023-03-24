@@ -40,7 +40,6 @@ export default registerBlockType(block.name, {
         const innerBlocksProps = useInnerBlocksProps(blockProps, { // eslint-disable-line
             allowedBlocks: ALLOWED_BLOCKS,
             template: TEMPLATE,
-            renderAppender: InnerBlocks.ButtonBlockAppender,
         });
 
         return (

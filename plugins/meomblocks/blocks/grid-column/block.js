@@ -37,7 +37,7 @@ export default registerBlockType(block.name, {
 
         const classes = classNames({
             [`${BLOCK_SLUG}`]: true,
-            'top-margin': true,
+            'top-margin-children': true,
         });
 
         const blockProps = useBlockProps({ // eslint-disable-line

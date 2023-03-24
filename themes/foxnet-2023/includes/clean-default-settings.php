@@ -68,7 +68,6 @@ function remove_wp_dashboard_widgets() {
     unset( $wp_meta_boxes['dashboard']['side']['core']['dashboard_primary'] );
     unset( $wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary'] );
     unset( $wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity'] );
-
 }
 add_action( 'wp_dashboard_setup', 'Kala\remove_wp_dashboard_widgets' );
 
