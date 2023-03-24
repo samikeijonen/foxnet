@@ -1,16 +1,16 @@
 .size-debugger {
-    position: fixed;
+    background-color: var(--color-black);
     bottom: 0;
     left: 0;
-    background-color: var(--color-black);
     min-width: 70px;
-    text-align: center;
     padding: 0.5rem;
+    position: fixed;
+    text-align: center;
     text-transform: capitalize;
 
     &::after {
-        content: "default";
         color: var(--color-black);
+        content: "default";
     }
 
     @each $name, $size in $breakpoints {

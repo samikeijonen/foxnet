@@ -11,7 +11,7 @@ $people_email        = get_field( 'people_email' );
 $people_linkedin_url = get_field( 'people_linkedin_url' );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'people-item top-margin top-margin--xs' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'people-item top-margin-children top-margin-children--xs' ); ?>>
     <?php if ( has_post_thumbnail() ) : ?>
         <figure class="people-item__image aspect-ratio aspect-ratio--4-5"><?php the_post_thumbnail( 'large' ); ?></figure>
     <?php endif; ?>

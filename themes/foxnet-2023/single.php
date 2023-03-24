@@ -15,8 +15,8 @@ while ( have_posts() ) :
         the_content(); ?>
 
         <div class="entry-single__articles width-wide module-top-margin">
-            <div class="entry-single__articles-wrapper top-margin top-margin--2xl">
-                <h2 class=""><?php esc_html_e( 'More to read', 'kala' ); ?></h2>
+            <div class="entry-single__articles-wrapper top-margin top-margin-children--2xl">
+                <h2 class=""><?php esc_html_e( 'Lisää lukemista', 'kala' ); ?></h2>
 
                 <?php
                 $args_cat = [

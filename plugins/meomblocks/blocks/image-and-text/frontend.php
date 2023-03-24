@@ -25,7 +25,7 @@ if ( $content ) : ?>
                     <?php echo wp_get_attachment_image( $image['id'], 'large' ); // phpcs:ignore ?>
                 </figure>
             <?php endif; ?>
-            <div class="image-and-text__content top-margin">
+            <div class="image-and-text__content top-margin-children">
                 <?php echo do_blocks( $content ); // phpcs:ignore ?>
             </div>
         </div>

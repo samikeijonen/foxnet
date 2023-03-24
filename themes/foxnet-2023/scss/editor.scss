@@ -89,16 +89,16 @@ body .editor-styles-wrapper {
 
 // Add border and title to reusable blocks to make them stand out from regular blocks.
 .is-reusable {
+    border-bottom: 1px dashed var(--color-grey-500);
+    border-top: 1px dashed var(--color-grey-500);
     max-width: none;
     padding-left: 0;
     padding-right: 0;
-    border-top: 1px dashed var(--color-grey-500);
-    border-bottom: 1px dashed var(--color-grey-500);
 
     &::before {
         background-color: var(--color-grey-500);
-        position: absolute;
-        padding: 0 0.25rem;
         content: attr(data-title);
+        padding: 0 0.25rem;
+        position: absolute;
     }
 }

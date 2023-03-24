@@ -58,8 +58,8 @@
 }
 
 .site-header__container {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
 
     @include media(navigation) {

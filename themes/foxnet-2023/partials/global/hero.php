@@ -19,7 +19,7 @@ if ( $content ) : ?>
                     <?php echo wp_get_attachment_image( $image_id, 'full', '', [ 'loading' => 'eager', 'class' => 'cover-img' ] ); ?>
                 </figure>
             <?php endif; ?>
-            <div class="hero__content top-margin">
+            <div class="hero__content top-margin-children">
                 <?php echo do_blocks( $content ); // phpcs:ignore ?>
             </div>
         </div>

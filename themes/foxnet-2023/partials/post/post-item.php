@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-item top-margin top-margin--xs' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-item top-margin-children top-margin-children--xs' ); ?>>
     <?php if ( has_post_thumbnail() ) : ?>
         <figure class="post-item__image aspect-ratio"><?php the_post_thumbnail( 'large' ); ?></figure>
     <?php endif;

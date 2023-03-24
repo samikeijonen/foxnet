@@ -17,7 +17,7 @@ export default registerBlockType(block.name, {
         } = props;
 
         const classes = classNames({
-            'width-wide': true,
+            'width-full': true,
             'module-top-margin': true,
             [`${BLOCK_SLUG}`]: true,
         });
@@ -26,9 +26,7 @@ export default registerBlockType(block.name, {
             className: classes,
         });
 
-        const innerBlocksProps = useInnerBlocksProps(blockProps, {
-            renderAppender: InnerBlocks.ButtonBlockAppender,
-        });
+        const innerBlocksProps = useInnerBlocksProps(blockProps, {});
 
         return <div {...innerBlocksProps} />;
     },
