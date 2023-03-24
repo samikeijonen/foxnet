@@ -71,7 +71,7 @@
 .is-root-container > .module-top-margin + *,
 .is-root-container > .wp-block-quote + *,
 .is-root-container > .wp-block-embed + * {
-    margin-top: var(--space-4xl-5xl);
+    margin-top: var(--space-4xl);
 }
 
 .content-area > .wp-block-image,
@@ -92,7 +92,7 @@
 }
 
 .has-background {
-    padding: var(--space-5xl) var(--x-padding);
+    padding: var(--space-4xl) var(--x-padding);
 
     + .has-background {
         margin-bottom: 0;
