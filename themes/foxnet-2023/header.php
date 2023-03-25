@@ -3,13 +3,13 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kala' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Hyppää sisältöön', 'kala' ); ?></a>
 
     <header class="site-header x-padding">
         <div class="site-header__container mx-auto width-wide">
 
             <div class="site-header__title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <a class="site-header__home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <?php bloginfo( 'name' ); ?>
                 </a>
             </div>

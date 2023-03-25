@@ -54,13 +54,41 @@
 .menu-anchor--main,
 .site-nav__sub-toggle {
     color: var(--color-white);
+    position: relative;
     text-decoration: none;
 
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &[aria-current="page"] {
         color: var(--color-white);
-        text-decoration: underline;
+    }
+
+
+    @include media-min(navigation) {
+        &::after {
+            background-color: var(--color-primary);
+            content: "";
+            height: 2px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 110%;
+            transform: scaleX(0);
+            transform-origin: bottom left;
+            transition: transform var(--transition-2) ease-in;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &[aria-current="page"] {
+            &::after {
+                transform: scaleX(1);
+            }
+        }
     }
 }
 
@@ -76,6 +104,7 @@
     }
 
     @include media(navigation) {
+        font-size: var(--step-1);
         padding: 0.75rem;
     }
 }
@@ -83,6 +112,33 @@
 .has-no-hero .menu-anchor--main {
     @include media-min(navigation) {
         color: var(--color-black);
+    }
+}
+
+.is-opened .menu-item {
+    @include media(navigation) {
+        animation: fade-in-up var(--transition-4) cubic-bezier(0.48, 0.43, 0.56, 0.82) both;
+        animation-delay: var(--transition-2);
+
+        &:nth-child(2) {
+            animation-delay: calc(var(--transition-2) + 0.05s);
+        }
+
+        &:nth-child(3) {
+            animation-delay: calc(var(--transition-2) + 0.1s);
+        }
+
+        &:nth-child(4) {
+            animation-delay: calc(var(--transition-2) + 0.15s);
+        }
+
+        &:nth-child(5) {
+            animation-delay: calc(var(--transition-2) + 0.2s);
+        }
+
+        &:nth-child(6) {
+            animation-delay: calc(var(--transition-2) + 0.25s);
+        }
     }
 }
 
@@ -116,10 +172,6 @@
         border-left: 1px solid var(--color-primary-100);
         padding-left: 1.5rem;
     }
-}
-
-a[aria-current="page"] {
-    text-decoration: underline;
 }
 
 .site-nav__toggle {
