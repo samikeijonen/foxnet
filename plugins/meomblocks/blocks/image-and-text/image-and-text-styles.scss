@@ -7,6 +7,15 @@
 
 .image-and-text__content {
     max-width: 60ch;
+    opacity: 0;
+}
+
+// Animation.
+.is-animating {
+    .image-and-text__content {
+        animation: fade-in-up var(--transition-4) cubic-bezier(0.48, 0.43, 0.56, 0.82) both;
+        animation-delay: var(--transition-2);
+    }
 }
 
 .image-and-text__image {
@@ -17,7 +26,6 @@
 .has-no-image-border .image-and-text__image {
     border: 0;
 }
-
 
 .image-and-text--position-right .image-and-text__image {
     @include media-min(medium-large) {

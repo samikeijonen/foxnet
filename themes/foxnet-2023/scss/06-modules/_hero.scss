@@ -29,6 +29,7 @@
 }
 
 .hero__content {
+    opacity: 0;
     position: relative;
     text-align: center;
     width: 100%;
@@ -56,6 +57,14 @@
         &:focus {
             color: var(--color-white);
         }
+    }
+}
+
+// Animation.
+.is-animating {
+    .hero__content {
+        animation: fade-in-up var(--transition-4) cubic-bezier(0.48, 0.43, 0.56, 0.82) both;
+        animation-delay: var(--transition-2);
     }
 }
 
