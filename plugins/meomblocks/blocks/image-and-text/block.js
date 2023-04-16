@@ -53,7 +53,7 @@ export default registerBlockType(block.name, {
         return (
             <div {...blockProps}>
                 <Sidebar {...props} />
-                <div className={`image-and-text__container grid-auto`}>
+                <div className={`image-and-text__container`}>
                     <figure
                         className={`image-and-text__image aspect-ratio aspect-ratio--1-1`}
                     >

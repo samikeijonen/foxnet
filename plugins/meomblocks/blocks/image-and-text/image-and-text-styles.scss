@@ -1,8 +1,26 @@
 @import "../../style-imports/theme-imports";
 
+.image-and-text {
+    container-name: image-and-text;
+    container-type: inline-size;
+}
+
 .image-and-text__container {
-    align-items: center;
-    gap: var(--space-3xl);
+    display: grid;
+    gap: var(--space-2xl);
+    grid-template-columns: 1fr;
+}
+
+@container image-and-text (min-width: 50rem) {
+    .image-and-text__container {
+        align-items: center;
+        gap: var(--space-2xl);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image-and-text--position-right .image-and-text__image {
+        order: 2;
+    }
 }
 
 .image-and-text__content {
@@ -25,10 +43,4 @@
 
 .has-no-image-border .image-and-text__image {
     border: 0;
-}
-
-.image-and-text--position-right .image-and-text__image {
-    @include media-min(medium-large) {
-        order: 2;
-    }
 }

@@ -19,7 +19,7 @@ $wrapper_attributes = get_block_wrapper_attributes( [ 'class' => implode( ' ', $
 
 if ( $content ) : ?>
     <div <?php echo $wrapper_attributes; // phpcs:ignore ?>>
-        <div class="image-and-text__container grid-auto">
+        <div class="image-and-text__container">
             <?php if ( $image ) : ?>
                 <figure class="image-and-text__image aspect-ratio aspect-ratio--1-1">
                     <?php echo wp_get_attachment_image( $image['id'], 'large' ); // phpcs:ignore ?>
